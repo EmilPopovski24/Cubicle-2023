@@ -5,7 +5,7 @@ const cubeManager = require("../managers/cubeManager")
 
 router.get("/",(req, res) => {
     const cubes =  cubeManager.getAll();
-    res.render('index', { cubes });
+    res.render('index', { cubes }); //podavam cubes na ender funkciqta, koqto gi podava na index
 });
 
 router.get("/about", (req, res) => {
@@ -13,3 +13,4 @@ router.get("/about", (req, res) => {
 });
 
 module.exports = router;
+ 
