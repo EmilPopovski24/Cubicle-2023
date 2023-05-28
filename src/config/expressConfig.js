@@ -4,7 +4,7 @@ const express = require('express');
 // app.use(express.static("src/public")); 
 function expressConfig(app) {
     app.use(express.static(path.resolve(__dirname, "../public"))); 
-    app.use(express.urlencoded({extended:false}));
+    app.use(express.urlencoded({extended:false})); //parse-va body and query string
 };
 //all static files are in public folder, path.resolve if it's not working
 
